@@ -65,9 +65,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Versioning:
+
 [Semantic version for react apps](https://reactjs.org/docs/faq-versioning.html)
 
 # Testing:
+
 Use whichever testing framework is used on the team. In the case of something like jest we should test:
 modal errors if necessary props aren't present
 hitting escape/cancel/x closes modal
@@ -75,6 +77,7 @@ typing in data and submitting saves data
 that screen readers can see the appropriate properties set for the react components
 
 # Accessibility:
+
 Most of what I could find were aria-labeledby and aria-describedby properties for the Dialog component. My googling failed me, but honestly I don't have a ton of experience handling 508 compliance/accessibility for React components so I'm looking forward to learning more about that. I also didn't set this as a prop, but we could pass in some values for colors/themes to account for color blindness, high contrast, dark mode, etc.
 
 # User stories
@@ -83,4 +86,5 @@ Most of what I could find were aria-labeledby and aria-describedby properties fo
 2.  For the non-technical manager, they should also be able to reference the jsdocs. Additionally, I can communicate with them to help them understand if the react component is what they need or if adjustments have to be made such that their needs are met with a future version.
 
 # Shortcomings:
-Used MUI with several instances of the sx prop. That can cause a performance hit but I was told KITE took care of styling. I also forgot to ask what constituted a failure for the success/failure message. I made a notification that pops up with failure if the data you're saving is the same as it was before (but it'll still save). This is unrealistic, but that's what I get for not asking.
+
+Used MUI with several instances of the sx prop. That can cause a performance hit but I was told KITE took care of styling. I also forgot to ask what constituted a failure for the success/failure message. I made a notification that pops up with failure if the data you're saving is the same as it was before (but it'll still save). This is unrealistic, but that's what I get for not asking. I could also change the structure of this to make it slightly more reusable.
