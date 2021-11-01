@@ -1,17 +1,18 @@
 import React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+  Snackbar,
+  TextField,
+  useMediaQuery,
+} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
-import IconButton from '@mui/material/IconButton';
 import PropTypes from 'prop-types';
-import Snackbar from '@mui/material/Snackbar';
-import TextField from '@mui/material/TextField';
-
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 /**
  * Creates a modal that allows a user to input text and the text
